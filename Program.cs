@@ -1,37 +1,33 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-
-namespace project_2
+﻿namespace project_1_prime_numbers
 {
- 
-public class Exercise28
+    internal class Program
     {
-        public static void Main()
+        static void Main(string[] args)
         {
-            int n, i, sum;
-            int mn, mx;
+            int x, y, i, j, f;
+
             Console.Write("Enter first number : ");
-            mn = Convert.ToInt32(Console.ReadLine());
+            x = int.Parse(Console.ReadLine());
             Console.Write("Enter second number : ");
-            mx = Convert.ToInt32(Console.ReadLine());
-            Console.Write("The Perfect numbers between " +mn+" and "+mx+" :");
-            for (n = mn; n <= mx; n++)
+            y = int.Parse(Console.ReadLine());
+            Console.Write("Prime numbers between " + "{0} and {1} are: ", x, y);
+
+            for (i = x; i <= y; i++)
             {
-                i = 1;
-                sum = 0;
-                while (i < n)
+                if (i == 1 || i == 0)
+                    continue;
+                f = 1;
+                for (j = 2; j <= i / 2; ++j)
                 {
-                    if (n % i == 0)
-                        sum = sum + i;
-                    i++;
+                    if (i % j == 0)
+                    {
+                        f = 0;
+                        break;
+                    }
                 }
-                if (sum == n)
-                    Console.Write("{0} ", n);
+                if (f == 1)
+                    Console.WriteLine(i);
             }
-            Console.WriteLine(" ");
         }
     }
-
-
 }
-

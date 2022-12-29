@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\source\\repos\\project 2\\project 2.csproj",
-      "projectName": "project 2",
-      "projectPath": "C:\\Users\\pc\\source\\repos\\project 2\\project 2.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\source\\repos\\project 1 prime numbers\\project 1 prime numbers.csproj",
+      "projectName": "project 1 prime numbers",
+      "projectPath": "C:\\Users\\pc\\source\\repos\\project 1 prime numbers\\project 1 prime numbers.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\source\\repos\\project 2\\obj\\",
+      "outputPath": "C:\\Users\\pc\\source\\repos\\project 1 prime numbers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
